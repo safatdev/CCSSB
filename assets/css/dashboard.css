@@ -1,0 +1,170 @@
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding-bottom: 100px;
+	background: #ddd;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.timeline-post-create {
+	overflow: hidden;
+}
+
+
+.timeline-post-create textarea.form-control {
+	margin-top: 30px;
+	height: 100px;
+}
+
+.profile-view {
+	text-align: center;
+	border-radius: 0px 0px 5px 5px;
+	background: rgb(232,83,57);
+	background: linear-gradient(90deg, rgba(232,83,57,1) 0%, rgba(157,6,83,1) 100%);
+	padding-top: 30px;
+	box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+}
+
+.profile-view > .profile-settings {
+	overflow: hidden;
+}
+
+.profile-view > .profile-settings > a {
+	float: right;
+	padding: 10px 15px 10px 15px;
+	color: #fff;
+	border-radius: 50%;
+	transition: all 0.2s ease-in-out;
+}
+
+.profile-view > .profile-settings > a:hover {
+	background: #fff;
+	color: #333;
+}
+
+.profile-view > .profile-image > img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+}
+
+.profile-view > .profile-name {
+	margin-top: 30px;
+	color: #fff;
+}
+
+.profile-view > .follow-button {
+	margin-top: 20px;
+}
+
+.user-stats {
+	text-align: center;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.05);
+}
+
+.user-stats > a.card {
+	display: block;
+	color: #333;
+	text-decoration: none;
+}
+
+.user-stats > a.card:hover {
+	background: #333;
+	color: #fff;
+}
+
+#postsContainer {
+	margin-top: 80px;
+}
+
+.card.post {
+	position: relative;
+	border: 0;
+	box-shadow: 0px 5px 8px rgba(0,0,0,.08);
+}
+
+.card.post > .card-header {
+	border-color: rgba(0,0,0,.05);
+	background: linear-gradient(90deg, rgba(232,83,57,1) 0%, rgba(157,6,83,1) 100%);
+	border-radius: 3px 3px 0px 0px;
+}
+
+.card.post > .card-header > .post-author {
+	margin-left: 120px;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	padding-bottom: 2px;
+	border-bottom: 2px solid transparent;
+	transition: all .15s ease-in-out;
+}
+
+.card.post > .card-header > .post-author:hover {
+	border-color: rgba(255,255,255,.5);
+}
+
+.card.post > .post-author-image {
+	position: absolute;
+	top: -30px;
+	left: 20px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 8px solid #fff;
+	box-shadow: 0px -2px 8px rgba(0,0,0,.1);
+}
+
+.card.post > .card-body {
+	padding-top: 45px;
+	padding-bottom: 30px;
+}
+
+.card.post > .card-footer {
+	background: #fff;
+	border-color: rgba(0,0,0,.05);
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
+
+.card.post > .card-footer ul > .list-group-item {
+	padding: 0;
+	border: 0;
+	margin-right: 10px;
+}
+
+.card.post:not(:first-child) {
+	margin-top: 60px;
+}
+
+#home-tab {
+	margin-top: 50px;
+	background: #343a40;
+	border: none;
+	border-radius: 50px;
+}
+
+#home-tab > li {
+	width: 50%;
+	font-size: 14pt;
+}
+
+#home-tab > li > a.nav-link {
+	border: 0;
+	border-radius: 20px;
+}
+
+#home-tab > li > a:not(.active) {
+	color: #fff;
+}
+
+.timeline-post-create textarea.form-control {
+	padding: 10px;
+}
+
+.timeline-post-create textarea.form-control:focus {
+	padding-left: 15px;
+}

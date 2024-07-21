@@ -1,0 +1,235 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	overflow: hidden;
+	background-image: url("../images/background_image.png");
+	background-size: cover;
+}
+
+#wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	z-index: -2;
+	background: rgb(98,12,12);
+	background: radial-gradient(circle, rgba(98,12,12,0.9) 0%, rgba(73,6,6,1) 100%);
+}
+
+
+/* Navbar */
+header > nav {
+	background: linear-gradient(to top, rgba(255,255,255,.1), rgba(255,255,255,.05));
+	border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+
+header > nav .navbar-brand {
+	color: #fff;
+}
+
+header > nav .navbar-toggler {
+	color: #fff;
+}
+
+header > nav #ccssb-navbar > ul.navbar-nav > li.nav-item:not(:first-child) {
+	margin-left: 10px;
+}
+
+header > nav #ccssb-navbar > ul.navbar-nav > li.nav-item > a.nav-link {
+	text-transform: lowercase;
+	color: #fff;
+	font-size: 16pt;
+	font-weight: 700;
+	position: relative;
+	top: 48px;
+	padding: 25px;
+	transition: all ease-in-out .2s;
+	text-shadow: 0px 0px 0px transparent;
+}
+
+header > nav #ccssb-navbar > ul.navbar-nav > li.nav-item:not(.active) > a.nav-link:hover {
+	top: 34px;
+	text-shadow: 0px 5px 10px rgba(0,0,0,.5);
+}
+
+@keyframes nav-anim {
+	0% {
+		left: 0;
+		width: 0;
+	}
+
+	50% {
+		left: 37.5%;
+		width: 25%;
+	}
+
+	100% {
+		left: 100%;
+		width: 0;
+	}
+}
+
+header > nav #ccssb-navbar > ul.navbar-nav > li.nav-item:not(.active) > a.nav-link:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	background: #fff;
+}
+
+header > nav #ccssb-navbar > ul.navbar-nav > li.nav-item:not(.active) > a.nav-link:hover:after {
+	animation-name: nav-anim;
+	animation-duration: 1s;
+	transition: all ease-in-out .2s;
+	bottom: -14px;
+}
+
+
+/* button */
+.btn-login {
+	text-transform: lowercase;
+	background: #fff;
+	font-size: 16pt;
+	font-weight: 700;
+	padding: 10px 80px 10px 80px;
+	border-radius: 50px;
+	position: relative;
+	top: 48px;
+	transition: all ease-in-out .2s;
+}
+
+.btn-login:active {
+	top: 50px;
+}
+
+.btn-login:hover {
+	color: #fff;
+	margin: 10px;
+	padding: 0px 70px 0px 70px;
+	background: transparent;
+}
+
+.btn-login:after {
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 10px;
+	left: 10px;
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+	border: 2px solid #fff;
+	border-radius: 50px;
+	transition: all ease-in-out .3s;
+}
+
+.btn-login:hover:after {
+	top: -10px;
+	left: -10px;
+	width: calc(100% + 20px);
+	height: calc(100% + 20px);
+}
+
+
+
+/* END OF HEADER */
+
+
+
+
+/* START MAIN CONTENT */
+#home-main {
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+
+#home-main .title {
+	text-transform: lowercase;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 150px;
+}
+
+hr.fancy {
+	border-color: rgba(255,255,255,.1);
+	border-size: 1px;
+}
+
+
+.home-list {
+	margin-top: 120px;
+	cursor: default;
+}
+
+.home-list tr {
+	transition: all ease-in-out .2s;
+}
+
+.home-list tr > td {
+	color: #fff;
+	font-size: 16pt;
+	padding: 15px 15px 15px 0px;
+	text-transform: lowercase;
+	font-weight: 700;
+	transition: all ease-in-out .2s;
+}
+
+.home-list tr > td:first-child {
+	text-align: center;
+	padding: 5px;
+	padding-right: 40px;
+	font-size: 30pt;
+	border-radius: 15px 0px 0px 15px;
+}
+
+.home-list tr > td:first-child > i {
+	transition: all ease-in-out .35s;
+}
+
+
+.home-list tr > td:last-child {
+	border-radius: 0px 15px 15px 0px;
+}
+
+.home-list tr:hover {
+	background: rgba(255,255,255,.05);
+}
+
+.home-list tr:hover > td {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.home-list tr:hover > td:first-child > i {
+	transform: translateX(-25px);
+	text-shadow: 0px 5px 20px rgba(255,255,255,.2);
+}
+
+
+
+.home-sign-up {
+	margin: 200px 30px 0px 30px;
+	padding: 75px;
+	text-transform: lowercase;
+}
+
+.home-sign-up > .card-title {
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.home-sign-up form .col-6:first-child {
+	padding-right: 0;
+}
+
+.home-sign-up form .col-6:last-child {
+	padding-left: 0;
+}
+
+.home-sign-up form .btn {
+	border-radius: 50px;
+	padding: 10px 30px 10px 30px;
+}
